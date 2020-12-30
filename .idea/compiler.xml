@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="rbac-server-service" />
+        <module name="rbac-server-auth" />
+        <module name="rbac-server-common" />
+        <module name="rbac-server-share" />
+        <module name="rbac-server-web" />
+        <module name="rbac-server-cache" />
+        <module name="rbac-server-bootstrap" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="rbac-server-auth" target="1.8" />
+      <module name="rbac-server-bootstrap" target="1.8" />
+      <module name="rbac-server-cache" target="1.8" />
+      <module name="rbac-server-common" target="1.8" />
+      <module name="rbac-server-service" target="1.8" />
+      <module name="rbac-server-share" target="1.8" />
+      <module name="rbac-server-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

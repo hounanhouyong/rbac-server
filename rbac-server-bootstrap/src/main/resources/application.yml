@@ -1,0 +1,42 @@
+
+debug: true
+
+server:
+  port: 9666
+
+mybatis-plus:
+  type-aliases-package: com.hn.rbac.server.share.model
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    jdbc-type-for-null: null
+  global-config:
+    banner: false
+    db-config:
+      select-strategy: not_empty
+
+
+spring:
+  datasource:
+    dynamic:
+      p6spy: true
+      primary: base
+      datasource:
+        base:
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://XXX:3306/rbac?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+          username: xxx
+          password: xxx
+
+
+admin:
+  shiro:
+    anonUrl: /ping,/login,/logout,/user/deleteCache/**,/user/clearCache,/drugstore/doctorDuty/searchByQuery
+    jwtTimeOut: 86400
+  openAopLog: true
+
+
+
+redis:
+  enabled: true
+  host: xxx
+  port: 6379
